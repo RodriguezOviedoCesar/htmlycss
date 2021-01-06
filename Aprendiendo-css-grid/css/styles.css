@@ -1,0 +1,318 @@
+
+/* Grid solo va a trabajar dentro de un div*/
+
+*{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/*Ejercicio completo el ejemplo esta debajo*/
+#website *{
+    margin: 0;
+    padding: 0;
+}
+
+#website{
+    display: grid;
+    /* No olivdar en los grid template colocar si colocamos el repeat poner las comas*/
+    grid-template-columns: repeat(5, 1fr) ; /*Para definir cunatas columans son*/
+    grid-template-rows: 150px 70px 1fr 70px;/* Pra definar cuantas filas vamos a tener */
+    
+
+    width: 75%;
+    height: 1000px; /* Con vh indicamo que ocupe todo el alto del navegador o viewport heigth */
+    margin: 0px auto;
+    border: 1px solid#ccc;
+}
+
+#header{
+    /* Para centrar los elementos en gri tenemos que convertir a flex y 
+    utilizar lo sgt:*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Hay otra manera mas sencilla asi como esta
+    #header{
+        display:grid;
+    }
+    #header h1{
+        justify-content: center;
+        align-self: center;
+    }
+    */
+
+
+    background-color: blue;
+    color: white ;
+    grid-column: 1/6;
+}
+
+#menu{
+    background-color: lightblue;
+    color: black;
+    grid-column: 1/6;
+    display: grid;
+
+}
+
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-content:center ;
+    align-self: center;
+    
+}
+
+#menu ul li{
+    list-style: none;
+
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+#contenido{
+    background-color: #eee;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px; /* para ponerle margenes entre ellos*/
+}
+
+#contenido article{
+    background-color:#ccc ;
+    border: 1px solid #555;
+    display: grid;
+    margin: 12px;
+}
+
+#contenido article p{
+    justify-content: center;
+    align-self: center;
+}
+
+#lateral{
+    background-color: orange;
+    color:white;
+    grid-column: 5/6;
+    display: grid;
+}
+
+#lateral h2{
+    align-self: center;
+    justify-content: center;
+}
+#piedepagina{
+    background-color: black;
+    color: white;
+    grid-column: 1/6;
+    display: grid;
+}
+
+#piedepagina label{
+    justify-content: center;
+    align-self: center;
+}
+
+/* Web site 2 trabajando con areas*/
+
+#website2 *{
+    margin: 0;
+    padding: 0;
+}
+
+/* Trabajando con areas*/
+
+/* Para trabajar con areas dentro de grid tenemos que poner 
+grid-template-areas: "","","",""; las comillas van una debajo de otra y las repetimos cuantas columnas o filas tengamos, dentro de las comillas
+van los nombres con los que trabajaremos en cada uno de los identificadores o grid utilizemos para la maquetacion*/
+
+/* Ejemplo para el de abajo 
+grid-template-areas:    "cabecera cabecera cabercera cabecera cabecera",
+                        "menu menu menu menu menu",
+                        "Contenido contenido contenido contenido lateral",
+                        "pie pie pie pie pie";
+                        
+#website2 #header{
+    Aqui dentro colocamos el nombre que pusimos delante o arriba en el template areas
+
+    grid-area   : cabecera
+}
+Lo demas lo declaromos asi como lo declaramos arriba
+*/
+
+/* Grid gap es separacion entre todos los elemtos dentro del grid
+grid-column-gap: esto nos permite meter espacio dentro solo de la columna 
+tambien lo podemos encontrar dentro del row esto nos deja espacio solo entre 
+filas es como poner margenes pero solo dentro de los contenedores de grid */
+
+#website2{
+    display: grid;
+    /* No olivdar en los grid template colocar si colocamos el repeat poner las comas*/
+    grid-template-columns: repeat(5, 1fr) ; /*Para definir cunatas columans son*/
+    grid-template-rows: 150px 70px 1fr 70px;/* Pra definar cuantas filas vamos a tener */
+    
+
+    width: 75%;
+    height: 1000px; /* Con vh indicamo que ocupe todo el alto del navegador o viewport heigth */
+    margin: 0px auto;
+    border: 1px solid#ccc;
+}
+
+#website2 #header{
+    /* Para centrar los elementos en gri tenemos que convertir a flex y 
+    utilizar lo sgt:*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Hay otra manera mas sencilla asi como esta
+    #header{
+        display:grid;
+    }
+    #header h1{
+        justify-content: center;
+        align-self: center;
+    }
+    */
+
+
+    background-color: blue;
+    color: white ;
+    grid-column: 1/6;
+}
+
+#website2 #menu{
+    background-color: lightblue;
+    color: black;
+    grid-column: 1/6;
+    display: grid;
+
+}
+
+#website2 #menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-content:center ;
+    align-self: center;
+    
+}
+
+#website2 #menu ul li{
+    list-style: none;
+
+}
+
+#website2 #menu ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+#website2 #contenido{
+    background-color: #eee;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px; /* para ponerle margenes entre ellos*/
+}
+
+#website2 #contenido article{
+    background-color:#ccc ;
+    border: 1px solid #555;
+    display: grid;
+}
+
+#website2 #contenido article p{
+    justify-content: center;
+    align-self: center;
+}
+
+#website2 #lateral{
+    background-color: orange;
+    color:white;
+    grid-column: 5/6;
+    display: grid;
+}
+
+#website2 #lateral h2{
+    align-self: center;
+    justify-content: center;
+}
+#website2 #piedepagina{
+    background-color: black;
+    color: white;
+    grid-column: 1/6;
+    display: grid;
+}
+
+#website2 #piedepagina label{
+    align-self: center;
+}
+
+
+/*Ejemplo*/
+#layout{
+    display: grid;
+    grid-gap: 10px ; /*Es para darle margenes entre elementos grid */
+    grid-template-columns: 23% 23% 23% 23%; /*Esto es para columnas*/
+    /*Para que se pongan a lado uno de otro y esto se pude realizar con los porcentajes o pixeles*/
+    /* Los numeros se ponen dependiendo de cuantas columnas quisieras tener en la fila*/
+    /* Para no escribir tanto o tantos porcentajes se puede poner repeat(numerodecolumnas, pocentaje o pixeles que quieres que contengan los cuadros)
+    y si solo quieres tener cierta cantidad de columnas solo puedes poner repeat(lo mismo de arriba), el porcentaje que quieres que las demas 
+    columnas tengan
+    tambien podemos utilizar las fracciones de la sgt manera 
+    grid-template-columns: 1fr el fr lo repites el numero de veces que quieres tener columnas dentro del div;
+    tambien pudes poner el repeat(4, 1fr) eso es para tener 4 columnas*/
+
+    grid-template-rows: 1fr 1fr 1fr ; /*esto es para filas*/
+    /*Se puede  realizar lo mismo que se realiza con frid-template-columns*/
+    
+    padding: 10px;
+
+    width: 1200px;
+    margin: 0 auto;
+    border: 3px solid orange;
+}
+
+#layout .caja{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222;
+    background-color: gray;
+}
+
+/* Para expandir una columna se teine que usar grid-column-star desde donde quieres que se expanda y 
+grid-column-star hasta donde quieres que se expanda dentro de la caja en la que quiero expandir */
+.red{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: red !important;
+}
+.green{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: green !important;
+}
+/* Tanto como grid end y star se pueden reducir solo poniedo el grid-columns o row dependidendo de lo que quieres: querdaria asi
+grid-columns: 4/5 desde la columna 4 hasta la 5*/
+.blue{
+    grid-column-start: 4;
+    grid-column-end: 5  ;
+    grid-row-start: 2;
+    grid-row-end: 5 ;
+    background-color: blue !important;
+}
+.pink{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: pinK !important;
+}

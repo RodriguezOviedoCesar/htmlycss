@@ -1,0 +1,377 @@
+/*Realizando el responsive a la web y adaptandola a cualqioer tipo de pantalla
+Para realizar este tipo de diseños tenemos que tener en cuenta estar maquetando y probando con los diferentes tipos de pantalla en 
+los naveegadores ya que estos tambien te ayudan en esta tarea*/
+/* Los media query van desde pantallas grandes hacia pantallas mas pequeñas*/
+/* Primer media query adpatacion tablets y computaddores chicos*/
+@media (max-width:1250px){
+    .wrap{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card{
+        width: 16%;
+        margin: 1.4%;
+    }
+
+    .card p{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    #banner h1{
+        font-size: 35px;
+        text-align: center;
+        margin: 33px auto;
+        width: 100%;
+    }
+
+    #articles{
+        width: 65%;
+    }
+
+    #articles article{
+        width: 97%;
+    }
+
+    #footer .wrap > div{
+        width: 24%;
+    }
+
+    #footer #browsers img{
+        width: 14%;
+    }
+
+    #footer h5{
+        font-size: 30px;
+    }
+}
+
+/*Segundo media query viendo puntos de corte*/
+
+@media (max-width:1080px){
+    .card .category{
+        font-size: 17px;
+
+    }
+    .card .description{
+        font-size: 14px;
+    }
+    #articles{
+        width: 61%;
+    }
+}
+
+/*Tercer media query*/
+@media (max-width:970px){
+    #articles{
+        width: 59%;
+    }
+    #footer .wrap >div{
+        width: 26%;
+        margin: 20px;
+    }
+
+    #footer h5{
+        font-size: 22px;
+    }
+}
+
+@media (max-width:925px){
+    #articles{
+        width: 65%;
+    }
+
+    #lateral{
+        width: 25%;
+    }
+
+    .aside-box{
+        width: 95%;
+        min-height: 140px;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    #login a{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #lateral input[type=text]{
+        width:78%;
+    }
+
+    #login input[type=email],
+    #login input[type=password]{
+        width: 65%;
+
+    }
+
+    #login #user,
+    #login #password{
+        margin-left: 24px;
+    }
+
+    #login input[type=submit],
+    #login input[type=button],
+    #login input[type=reset],
+    #login button{
+        margin-bottom: 0px;
+    }
+    #login input[type=reset]{
+        display: none;
+    }
+}
+
+/* Cuarto media query*/
+@media (max-width:899px){
+    #lateral h3{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:799px){
+    #banner h1{
+        font-size: 29px;
+    }
+
+    .card{
+        height: auto;
+
+    }
+
+    .card .category{
+        font-size: 15px;
+        margin-top: -23px;
+    }
+
+    .card .description{
+        display: none; /* EL display tambien sirve para ocultar cosas*/
+    }
+
+    #footer img{
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+}
+
+@media(max-width:724px){
+    #header{
+        width: 100%;
+        height: 120px;
+        padding-top: 10px;
+    }
+
+    #menu {
+        clear: both;
+        float: none;
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    #logo{
+        float: none;
+        width: 200px;
+        margin: 0px auto;
+    }
+    #lateral input[type=text]{
+        width: 70%;
+    }
+}
+
+@media (max-width:660px){
+    #articles{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        min-height: auto;
+    }
+
+    #lateral{
+        margin: 0 auto;
+        float: none;
+        width: 100%;
+        min-height: auto;
+        margin-top: 20px;
+    }
+
+    #banner h1{
+        font-size: 25px;
+    }
+
+    #lateral input[type="text"] {
+        width: 93%;
+    }
+
+    #login input[type="email"], 
+    #login input[type="password"] {
+        width: 90%;
+    }
+    #footer{
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    #footer .wrap >div{
+        width: 100%;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+
+    #footer h5{
+        font-size: 25px;
+    }
+    #menu{
+        width: 450px;
+    }
+}
+
+@media (max-width:475px){
+    #logo{
+        float: left;
+    }
+
+    #header{
+        height: 275px;
+    }
+
+    #menu{
+        width: 100%;
+        
+    }
+
+    #menu li{
+        width: 100%;
+    }
+
+    #menu ul li a{
+        line-height: 52px;
+        
+    }
+
+    #menu ul li a:hover {
+        color: #37bcf9;
+        transform: scale(1, 1);
+        font-size: 30px;
+    }
+
+    #banner{
+        height: 85px;
+    }
+
+    #banner h1{
+        font-size: 18px;
+    }
+    
+    #lateral input[type=text]{
+        width: 85%;
+    }
+
+    .card .icon{
+        font-size: 35px;
+    }
+
+    .card:hover .icon{
+        font-size: 35px;
+    }
+
+    .card .category{
+        font-size: 13px;
+    }
+    #login input[type="email"],
+    #login input[type="password"] {
+        width: 86%;
+    }
+    #articles .data{
+        float: none;
+        border-radius: 0px;
+        margin: -10px;
+    }
+    #articles article h4{
+        margin-top: 20px;
+    }
+}   
+
+@media (max-width:440px){
+    #banner h1 {
+        font-size: 16px;
+    }
+    #banner {
+        height: 79px;
+    }
+    .card {
+        width: 40%;
+        margin: 1.4%;
+        margin-left: 26px;
+    }
+
+    .card:last-child{
+        margin-left: 34.5%;
+        margin-top: 10px;
+        
+    }
+
+    .card .icon {
+        font-size: 60px;
+    }
+    
+    .card:hover .icon {
+        font-size: 60px;
+    }
+    .card .category {
+        font-size: 18px;
+    }
+    #footer .wrap > div{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:357px){
+    .card{
+        width: 80%;
+    }
+    .card:last-child {
+        margin-left: 26px ;
+        margin-top: 5px;
+    }
+
+    #banner{
+        height: 113px;
+    }
+
+    #banner h1{
+        font-size: 23px;
+    }
+    #login #user, 
+    #login #password {
+        margin-left: 12px;
+    }
+}
+@media (max-width:301px){
+    #articles h2{
+        font-size: 35px;
+    }
+}
+@media (max-width:269px){
+    #lateral input[type=button], 
+    #lateral input[type=submit]{
+        padding-left: 5px;
+    }
+
+    #articles h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:261px){
+    #lateral input[type="button"], #lateral input[type="submit"] {
+        padding-left: 4px;
+    }
+
+    #footer #browsers img {
+        width: 12%;
+    }
+}

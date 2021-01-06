@@ -1,0 +1,120 @@
+/*body{
+    background: gray;
+}
+
+h1{
+    color: #ff8080;
+    font-size: 40px;
+    text-decoration: underline;
+}
+*/
+/* Que es un selector
+*/
+/* Selector universal es este signo '*' y sirve para seleccionar todos los elementos del HTML*/
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Selector de Etiqueta 
+puedo seleccionar cualquier elemento de la pagina web con una etiqueta de HTML*/
+h1{
+    background: red;
+    color: white;
+    padding: 10px;
+}
+a{
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+}
+/* La linea de abajo es como poner estilos por indice ya que va desde el primero hasta la ultima etiqueta pero con esto modificamos todos los elementos
+de la etiqueta*/
+footer a{
+    color: #858577;
+}
+/* Selector de indentificador o id */
+/*Si quiero compartir un diseño con otro identificador etiqueta o clase solo se tiene que poner na coma espacio + nombre del
+objecto a modificar*/
+#Descripcion{
+    border: 5px solid black;
+    padding: 15px ;
+}
+    /* Nota la hoja de estilos CSS lee desde arriba hacia abajo y lo ultimos que pongamos reescribe lo demas*/
+#titulo{
+    background: blue;
+    border: 2px dashed white;
+    
+}
+
+#Footer__parrafo{
+    background: black;
+    text-align: center;
+    color: #88bfbf;
+}
+
+/* Selector de clase */
+/* Para selecionar una clase - se selecilona la clase con .- 
+Ejemolo esta abajo*/
+.Parrafo{
+    border: 5px solid #B2AD87;
+    background: #858577;
+    padding: 15px;
+    margin: 15px;
+} 
+.Subtitulo{
+    border: 5px solid #00a400 ;
+    background: #689b9b;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color:whitesmoke;
+}
+
+/* Selector de atributo */
+/* Permite sellecionar elementos del HTML en base a un atributo que tengan puesto es mayormente utilizado en los formularios*/
+
+#Formulario form{
+    border: 5px solid rebeccapurple;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+/* Para elegir a cada uno de los elementos que contenga dentro es con el selector universal*/
+#Formulario form *{
+    display: block;
+}
+/* Para darle un estilo en concreto a los input */
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 300px;
+}
+
+input[type="submit"]{
+    width: 250px;
+    padding: 3px;
+    background-origin: border-box;
+    background: blanchedalmond ;
+    color: red;
+    font-size: 17px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Selectores hijos */
+/* Los selectores hijos  es un cadena descendente desde la clase o id que se le pone al elemento hasta la ultima clase que queires realizar las
+modificaciones CSS
+Su estructura es la sqt
+class o id > etiqueta > etiqueta hasta donde quieras llegar pueden haber mas etiquetas si es que deseamos poner otras*/
+
+#Menu > li > a{
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+}
+
+/* Prioridad en css 
+para que un estilo tenga mas priridad haci sea de bajo rango se tiene que poner la palabra reservada !important
+nota: cuanto mas especifico sea un idientrificador mas prioridad va a tener pero !important se reescribe sobre todo*/
+h1{
+ color:royalblue !important;   
+}

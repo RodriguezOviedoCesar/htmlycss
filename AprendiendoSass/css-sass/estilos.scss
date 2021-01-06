@@ -1,0 +1,13 @@
+/*Aprendiendo sass 
+Primero empezaremos por las variables
+Varable es un contenedor de informaicon
+para ejecutarlo y poder compilarlo y que el html lo puede procesar se debe de conpilar y convertirlo en un archivo css esto se hace mediante el
+cmd o consola de las computadoras mediante este comando solo se es¡jecuta este comando en el directorio que tengas tu archivo sass 
+ ****  sass --watch nombrearchivosass nombredelarchivocssquequierescrear o que quieres que contenga el sass al css**** */
+/* Mixxing es una funcion dentro de sass para ver ejemplo revisar en el archivo base*/
+/* Herencia tambien esta en la hoja _base.scss*/
+/* Operadores tambine esta en la base*/
+
+
+@use 'base';
+@use 'encabezado';

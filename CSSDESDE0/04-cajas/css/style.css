@@ -1,0 +1,91 @@
+/* Para resetear los estilos de las cajas que vienes por default 
+es colocar el padding y margin 0 con el selector global*/
+@font-face{
+    font-family: 'NuevoDisenoparaesteindex';
+    src: url(../font/Redressed/Redressed-Regular.ttf);
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    padding: 20px; /* Es para darle mas estetica cuando trabajamos con cuadros*/
+}
+
+#caja1,
+#caja2,
+#caja3,
+#caja5{
+
+    /* con width y heigth le puedes dar tamaño a las cajas */
+    width: 250px;
+    height: 250px;
+    /* Para asignar el color dentro de las cajas*/
+    background-color: lightblue;
+    /* Para asignar un borde a las paginas*/
+    border: 3px solid crimson;
+    /* Para colocar margin 
+    el margin o margen se le puede modifciar los cutro elementos rigth left  button y el otro es para investigar que es el primero que se declara   
+    o solo se le pude poner un margen generico como el que esta debajo*/
+    margin: 15px;
+    /* Tambien se pueden escribir por separado haci como el ejemplo de Abajo*/
+    margin-top:55px ;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right:25px 1;
+    /* Padding es el margen interno*/
+    padding: 20px;
+    /* margen inferior*/
+    padding-bottom: 40px;
+    /* Para que una caja este a lado de otra se utiliza la palabra reservada float*/
+    float: left; /* Se tiene que jugar con los margin pading y border para que tengas a gusto tus cuadros donde lo desses*/
+    /* Para poder mover un elemento este debe tener el display: block;*/
+    display: block;
+}
+p,
+h1,
+label{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    font-family:'NuevoDisenoparaesteindex', cursive ;
+    line-height: 40px;
+    color: white;
+}
+#Titulo1{
+    color: black;
+}
+#caja4{
+    background-color: brown;
+    border: 5px solid #545235;
+    background-size: contain;
+    padding: 15px;
+    margin: 25px;
+    margin-top: 30px;
+}
+#caja5{
+    display: block;
+    float: left;
+    background-color: blue;
+    border:3px solid #256442;
+    padding: 15px;
+    padding-bottom:40px;
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    margin-top:55px ;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right:25px 1;
+}
+#parrafoprueba{
+    color:black;
+}
+/* Para limpiar elementos flotantes*/
+.clearfix{
+    float: none;/* Se le dice que esta propieda no se tiene que flotar*/
+    clear: both;/* Esto significa que va a limpiar los flotados que hay en la parte de rriba izaquierda derecha*/ 
+}

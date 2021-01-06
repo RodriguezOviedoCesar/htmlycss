@@ -1,0 +1,74 @@
+#boton{
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid greenyellow;
+    /* Para aplicar una transicion y se puede selecionar los elementos que van a tener la transcicion y que elementos y cuanto va a 
+    demorar todas las transciones*/
+    transition: all .5s;
+}
+
+#boton:hover{
+    border-radius: 15px;
+    background-color: brown;
+    border: 5px solid red;
+}
+
+#caja{
+    display: block;
+    background-color: beige;
+    width: 180px;
+    height: 180px;
+    border: 5px ridge black;
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    animation-name: desplazamiento;/* llamamos a la animacion*/
+    animation-duration: 4s; /* Esto es la duracion de la animacion*/
+    animation-iteration-count: infinite ; /* Para ver cuanto va a durar en este caso va a ser infinto*/
+    animation-timing-function: linear; /* Esto es para que sea rapido al principrio o al final o en el medio o asi hay que ir practicando todo estp*/
+}
+/* para relaizar una animacion tienes que oner la palabra reservada
+@KeyFrames --- front donde empiesas y to donde termian*/
+
+/*@keyframes desplazamiento{
+    font{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 1200px;
+    }
+    lo de arriba era para hacerlo sin la regresada abajo estaria con todo y regresada
+}*/
+
+@keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+        /* Tambien se pueden aplicar transforms de css en este caso es la transformacion trasfomr*/
+        transform: rotate(0deg);
+    }
+    25%{
+        background-color: brown;
+    }
+    50%{
+        margin-left: 600px ;
+        transform: rotate(360deg);
+        border-radius: 999px; /*Esto es para que se transforme en un circulo y luego vueva a su formal moral*/
+    }
+    75%{
+        background-color: chocolate;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}

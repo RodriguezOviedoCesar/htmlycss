@@ -1,0 +1,50 @@
+body{
+
+    text-align: justify;
+    /*background-color: rebeccapurple;
+    background-image: url(C:/Users/CESAR/Desktop/cursomastercss/CSSDESDE0/03-fondos/picures/OI.jfif); /* Para poner imagen dentro de un background*/
+    /*background-repeat: repeat;*/ /* Para que repita la imagen cuantas veces quieras*/
+    /*background-size: 100*/;/* Para cambiarle el tamaño a la imagen que esta de fondo y ajustarla a nuestra medida se utiliza mas para ajustar la imagenes
+    grandes*/
+    /*color: yellow;
+    /* Para que el contenido se mueva pero el background o imagen de fongo no se mueva y se quede fijo */
+   /* background-attachment: fixed;*/
+
+
+}
+
+#caja{
+    border: 5px solid black;
+    padding: 10px; /* pading es para un margen interno*/
+    background-color: red;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Para centrar el texto
+    EJEMPLO*/
+    text-align: center;
+    /* Para controlar el la altura del texto se puede usar el line-height con esto modificas la altura de las lineas*/
+    line-height: 40px;
+    /* Test-transform me permite modificar la esturctura de las letras ya sea parrafo o h1 o h6 oo etc*/
+    text-transform:unset;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration-skip-ink:initial;
+    /* Identidacion para cada salto de linea en cada parrafo es con text-ident:
+    esto se da solo en los parrafos */
+    text-indent: 15px;
+    /* Para modificar el espacio entre palabras para cada parrafo */
+    word-spacing: normal;
+    /* Para separar las letras entre cada linea se separa en px % em 
+    letter-spacing: 15px;*/
+}
+.Laveldiv{
+    font-size: 50px;
+}
+
+.Parrafos{
+    background-image: url(../picures/OIP.jfif);
+    background-color: coral;
+    color: aqua;
+    border: 5px solid #454445;
+    
+}

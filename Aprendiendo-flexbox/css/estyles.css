@@ -1,0 +1,94 @@
+/* Variables con css se tiene que poner :root{y aqui se define todas las variables}
+Las variables se definen asi dentro de las llaves
+--nombrevariable: valor y para declararlas en las cjas se declaran asi
+loquequieresquehaga: var(--rojo)*/
+
+
+/* Con flex los anchos son automaticos (se adaptan al contenido que contengan dentro de ellas)*/
+/* Hay varios tipos de flexbox investigar para que sirve cada uno de ellos */
+
+body{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#layout{
+    border: 3px solid black;
+    padding: 5px;
+    display: flex; /* Para utilizar y que los elementos dentro del cuadro sean flex*/
+    /* display:inline-flex esta propiedad de flex se adapta hace que la caja contenedora se dapate a solo los elementos que contenga y 
+    se centre*/
+    /* Aprendiendo a trabajar con las direcciones de flexbox*/
+    flex-direction:row;/* El row indica que los elementos esten en fila -- el elemento column hace que los elemenots dentro del flex esten en columna*/
+    /* Row reverse mueve los elemtos igual que el row pero este lo ajusta a la derecha y los coloca desde el ultimo elemento hasta el primero
+    lo mismo con column-reverse*/
+    flex-wrap: wrap; /* no wrapEsto es para que los elementos sobresalgan del cuadro y no importaria el orden sobrelen de la caja que los contiene
+     y con el wrap hace que no sobresalgan y si hay varios elemtos dentro del cuadro o caja contenedora estos simplemente se vayan hacia abajo */
+
+    /* el flex-flow combina los dos mencionados anteriormente, uniendolo en una sola sentencia Ejemplo: flex-flow: direction y si es o no wrap;*/
+    /*Tambien se puede poner orden a las cajas pero este order se coloca dentro de las cajas contenedoras Ejemplo: debajo en donde estan las cajas
+    .red y eso*/
+    /* La propiedad felx-grow no se puede utilizar dentrode la caja contenedora si no dentro de todas las clases que esten dnetro de ella 
+    Ejemplo: debajo de esto */
+
+    /*Elementos individuales dentro de las cajas*/
+    justify-content: space-evenly; /*Flex-start o left sirve para poner el contenido a la derecha el 
+    end o left sire para poner el contenido a la izquierda center es
+    para centrar el contenido  
+    la propiedad space-araound* distribuye conotenido dejando espacio entre cajas o contenido
+    space-between hace que el primer y ultimo elemento se pegen a los extremos
+    Space-evelyn es siilar a la de space araund -- es un especie de centrado y alinedao*/
+    /* Con el align-items sirve para alinear  los itens dentro de los recuadros o cajas contenedoras */
+    height: 700px;
+    align-items: flex-start; /*baselina se ajusta al contenido que tine dentro de la caja y este no excede mas alla 
+    con center centra todo al centro 
+    con flex-end se coloca en la parte de abajo del cuadro principal
+    con flex-star se coloca ariiba del cudro que lo contiene estos tambien se puden colocar dentro de las cajas hijas uno por uno de contenido
+    y asi poder tener mas posibilidades de crear mejores contenidos */
+
+}
+
+.caja{
+    /*flex-grow: 1; /* Lo que hace esto es compartir espacio con los que esten dentro de la division se puede colocar desde 0 hasta donde queremos
+    pero se recomienda poner desde 1 hasta 2 o 3 no se recomienda poner mas ya que no quedaria muy bien par ael responsive web */
+    /*flex-basis: 25%; /* Con esto se le indica que cada */
+    /* justify-content:  permite organizar el contenido a manera de cada uno o como cada uno quiera */
+    
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222;
+    margin:10px;
+    background-color: grey;
+    /*flex-basis: calc(100%/5);*/ /*Es para darle un tamaño a la caja y el clac se pueden realizar operaciones con esto*/
+}
+
+.red{
+    /*Asi se puede colocar en orden los elementos*/
+    /*order: 4;*/
+    /*flex-grow: 5; /*Sirve para espicificar que cantidad de espacio ocupa cada elemento*/
+    /*flex-basis: calc(100%/3);/* Es para darle un tamaño a la caja y el clac se pueden realizar operaciones con esto*/
+    background-color: red;
+}
+
+.green{
+    /*order: 1;*/
+    /*flex-grow: 5;*/
+    background-color: green;
+}
+
+.blue{
+    /*order: 2;*/
+    /*flex-grow: 5;*/
+    background-color: blue;
+}
+
+.orange{
+    /*order: 3;*/
+    /*flex-grow: 5;*/
+    /*flex-shrink: 0;*/ /* Esta sentencia sirve para reducir el tamaño de las cajas */
+    background-color: orange;
+}

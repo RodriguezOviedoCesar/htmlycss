@@ -1,0 +1,61 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* :first-child significa seleccionar el primer hijo*/
+ul li:first-child{
+    color: purple;
+}
+
+/* Escoger un elemento dentro de los que teines en las etiquetas y modificarlo solamente ese para seleccionar ()-> poner entre estos 
+parentesis el elemento que quieres modificar*/
+ul li:nth-child(2){
+    color:aliceblue;
+
+}
+/* Este es para seleccionar el ultimo elemento */
+ul li:last-child{
+    color:aliceblue;
+
+}
+
+/* Pseudooclaes que se pueden aplicar a enlaces */
+.Enlace{
+    font-size: 20px;
+}
+
+/*Esta pseudoclase es cuando aun no se visita la clase y queremos que el color sea*/
+.Enlace:link{
+    color: red;
+}
+/* Cundo ya se a visitdo el enlace*/
+
+.Enlace:visited{
+    color:black;
+}
+
+/* Pseudoclase que se pueden aplicar a cualquier elemento*/
+/*
+La clase hover
+active
+focus*/
+
+/*Cuando se pase por encima*/
+.Enlace:hover{
+    color:aqua;
+}
+/* Cuadno se pulse le de unos estilos difrentes*/
+.Enlace:active{
+    font-family: Arial, Helvetica, sans-serif;
+    color:brown;
+}
+
+/* La clase focus se usa mas en los formularios*/
+input[type=text]{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+input[type="text"]:focus{
+    border: 4px dashed red;
+}

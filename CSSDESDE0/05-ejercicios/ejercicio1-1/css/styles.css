@@ -1,0 +1,135 @@
+@font-face{
+    font-family: "Resource";
+    src: url(../font/Ro/Rochester-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Resource";
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.general{
+    width: 1200px;
+    border: 2px solid #cccccc;
+    margin: 0px auto; /* Para centrar un cuadro o lo que deses en la parte del medio*/
+    margin-top: 40px; /* Para separarlo de la parte superior*/
+    padding: 0px auto;
+}
+.header{
+    text-align: center;
+    background-color: #cccccc;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    color: black;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.Menu{
+    background-color: aqua;
+
+}
+
+.Menu ul li{
+    /*display:inline-block ; /* Para poner una al costado de otro */
+    display: block; 
+    float: left;
+    border-right: 2px solid #cccccc;
+}
+
+.Menu ul li a{
+    color: black;
+    padding: 15px;
+    display: block;
+}
+
+.Menu ul li:hover{
+    /* Para tener efectos interativos para esto se utiliza los pseudoclase*/ 
+    background-color:teal;
+    cursor:pointer;/* para cuando se pase por encima de li nos salga efectos interatios*/
+}
+
+.Menu ul li:hover a{
+    /* Para tener efectos interativos para esto se utiliza los pseudoclase*/ 
+    color: coral;
+}
+
+.Contenido{
+    background-color:midnightblue;
+    width: 69.65%;
+    border: 1px solid black;
+    float: left;
+    text-shadow: 0px 0px 5px black; /* Eje x Eje y y para darle a la sombras luego el color*/
+    /* Para ponerle spmbras a las cajas en box-shadow*/
+    /* Para colocar una sombra por dentro en inset*/
+    /* Bordes redondeados es con border-radius;y le pones los pixeles que quieres para que se redonden y se pueden poner por esquinas 
+para hacer eso tienes que esctibir dentro del radius los pixeles que quieres que tengan cada esquina*/
+    /* overflow es para que cuando haya un parrafo dentro de un cuadro y este se salga solo se vea el contenido que se puede encapsular 
+    dentro del cuadro mas no lo que pueda estar fuera de este cuadro para esto se utiliza 
+    overflow:; y sus derivaciones que tenga dentro de este cuadro */
+    /* NOS QUEDAMOS EN LOS MOMENTOS DE PSICIONES FIJAS Y ABSOLUTAS */
+}
+.Contenido > h1{
+
+    color: white;
+    text-align: center;
+    background-color: black;
+    line-height: 75px;
+    border-bottom: 1px solid #cccccc
+}
+
+
+.caja{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+    display: block;
+    float: left;
+
+}
+p{
+text-align: justify;
+}
+.caja:hover{
+    cursor: pointer;
+    background-color: #cccccc;
+}
+
+.caja:hover h2{
+    color:chartreuse;
+}
+
+.barralateral{
+    width: 30%;
+    border: 1px solid red;
+    float: left;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.footer{
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+
+}
+
+
+
+.libre{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: fixed;
+    top: 50px;
+    
+}

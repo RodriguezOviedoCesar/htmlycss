@@ -1,0 +1,35 @@
+#barralateral{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+
+
+    input[type=button]{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px;
+        height: 60px;
+        border:none;
+        background-color: #f7f5f5;
+        font-size: 16px;
+        color: rgb(92, 92, 92);
+        margin: 10px;
+        cursor: pointer;
+    }
+    input[type=button]:first-child{
+        background-color: transparent;
+        border-bottom: 2px solid #cfcfcf;
+    }
+    input[type=button]:hover{
+        width: 210px;
+        height: 65px;
+        justify-content: center;
+        border-bottom: 2px solid #cfcfcf;
+        border-right: 2px solid #cfcfcf;
+    }
+
+}

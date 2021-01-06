@@ -1,0 +1,57 @@
+@font-face{
+    font-family: "Sofia";
+    src: url(../font/sofia/Sofia-Regular.ttf);
+}
+
+
+*{
+    font-family: "Sofia";
+    margin: 0;
+    padding: 0;
+    color:brown;
+    font-size: 20px;
+}
+body{
+    background-color: antiquewhite;
+}
+
+h1,
+h2,
+p{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+    text-decoration-style: double;
+    font-size: 1.5em;
+}
+
+.contenedor{
+    padding: 15px;
+    margin: 15px;
+    height: 800px;
+    width: 1450px;
+    background-color:thistle;
+    border: 3px solid #225588;
+    display: block;   
+    
+}
+
+.cajas{
+    background-color: dimgrey;
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 40px;
+    float: left;
+    text-align: 250px;
+    padding-bottom: 0px;
+    line-height: 250px;
+}
+
+.clearfix{
+    float: none;
+    clear: both ;
+}

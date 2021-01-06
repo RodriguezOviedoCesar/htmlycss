@@ -1,0 +1,145 @@
+/*Lo e abajo son varaibles*/
+
+$fuente-tipica: sans-serif, Helvetica, Arial;
+$color-fondo: #ccc;
+$color-letra: red;
+$color-secundario: rgb(122, 20, 20);
+
+
+/*Esto es anidacion*/
+
+body{
+    background-color: $color-fondo;
+}
+
+h1{
+    color: $color-letra;
+    font-family: $fuente-tipica;
+}
+p{
+    color: $color-secundario;
+}
+
+.caja{
+    width: 250px;
+    height: 250px;
+    background-color: whitesmoke;
+    border: 4px solid black;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px gray, 1px 2px 1px gray, 1px 3px 1px gray, 1px 4px 1px gray;
+    margin: 0 auto;
+
+    h1{
+        color: blue;
+    }
+    p{
+        color: green;
+    }
+    .info{
+        font-size: 10px;
+
+        span{
+            color: $color-secundario;
+            font-size: 25px;
+            p{
+                color: $color-letra;
+                font-size: 30px;
+                h1{
+                    color: $color-secundario;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+/*En estilos.scss esta como trabajar co modulos y importalos con la palabra @use*/
+
+/* Mixins / Funciones */
+/* Se utiliza con la palbra reservada mixin*/
+/* Para incluir los mixin se requiere poner @incluides: nombre del la funcion o mixin*/
+/* Al igual que una funcion se le pueden poner parametros y declararlos despues*/
+@mixin crearuntextomejor(){
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+
+h1{
+    @include crearuntextomejor();
+}
+
+/*Herencia*/
+/* Para realizar una herencia en sass se tiene que poner este simbolo delante del nombre de la herencua Ejemplo
+%alert-normal
+y para llamar a esta herencia se utiliza la palabra @extend*/
+
+
+%alert-normal{
+    border: 1px solid gray;
+    background-color:cadetblue;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    cursor: pointer
+}
+
+.alerta{
+    @extend %alert-normal;
+}
+.alerta1{
+    @extend %alert-normal;
+    color: red;
+    border:4px solid red;
+}
+.alerta2{
+    @extend %alert-normal;
+    color: yellow;
+    border: 4px solid yellow;
+}
+.alerta3{
+    @extend %alert-normal;
+    color: green;
+    border: 4px solid green;
+}
+
+/* Operaciones */
+/* Tambien se pueden coloar variables y dividrilas entre otras variables que contengan algun numero dentro de ellas */
+h1{
+    font-size: 20px + 5px;
+}
+
+/* Condicionales */
+/* if  como todo lenguaje de programacion se puede colocar el if else if y else*/
+h1{
+    @if $color-fondo != #ccc{
+        color: black;
+    }@else if $color-fondo == black{
+        color: lightsalmon;
+    }@else{
+        color:pink;
+    }
+}
+/* For */
+$contador: 1;
+
+@for $contador from 1 through 8{
+    .listado{
+        ul{
+            /* La #{$contador} se realiza eso para poder realizar la operacion y el nth:nth-child() es para que agarre cada uno de los elementos 
+            del li atravez del contador que va de 1 en 1 por la almoadilla*/
+            li:nth-child(#{$contador}){
+                color: orange;
+                font-size: $contador + 1px;
+            }
+        }
+    }
+}
+
+
+/* each */
+/* whiless  */
+
+/* Los demas aprenderlos por nuestra propia cuenta */

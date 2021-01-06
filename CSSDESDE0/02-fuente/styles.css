@@ -1,0 +1,48 @@
+@font-face{
+    font-family: MartelCustom;
+    src: url(FuentesCustom/font/martel/Martel-ExtraBold.ttf);
+}
+@font-face{
+    font-family: BungueCustom;
+    src: url(FuentesCustom/BungeeOutline/BungeeOutline-Regular.ttf);
+}
+@font-face{
+    font-family: GreatCustom;
+    src: url(FuentesCustom/GreatVibes/GreatVibes-Regular.ttf);
+}
+
+h1{
+    font-family: 'MartelCustom' ,Georgia, 'Times New Roman', Times, serif;   
+    font-style: oblique; /* Para ponerle estilos a la letra*/
+    /* Colores Personalizacion */
+    /* Colores del sistema -- Cuando pones color y pones autocompletar salta la lista de los colores del sistema 
+        son colores que tienen nombre preescrito*/
+    color:mediumpurple;
+    /* Colores Hexadecimales -- son los que se escriben en el sistema hexagesimal #ffffff*/
+    color:#c41751;
+    /* Colores RGB */
+    color: rgb(95, 196, 153, 0.8);
+    /* Colores RGBA */
+    color: rgba(95, 196, 153, 0.8);
+}
+h3{
+    font-family: 'Yellowtail', cursive;
+    text-shadow: 4px 4px 4px    ;
+    font-size: 45px;
+    font-weight: lighter;/* Esto hace para que se vea mas delgado*/
+}
+.Parrafo1{
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    font-weight: 1000 ;/*el font-weight es para que la letra se vea mas negrita*/
+}
+.Parrafo2{
+    font-family: "BungueCustom";
+    color: rgb(255, 0, 0);
+    font-size: 35px;
+}
+.Parrafo3{
+    font-family: 'GreatCustom';
+    color: rgb(255, 145, 0);
+    font-size: xx-large;
+}

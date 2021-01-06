@@ -1,0 +1,108 @@
+/*Responsice significa trabajar los cuadros con porcentajes para que estos se adaptn a las diferentes pantallass
+y no trabajar con pixeles ya que estos son los que le dan un sola extructura y no dejan que se muevan los diferentes articulos dentro
+de la pagina web*/
+/* Para realizar un buen responsive se tienen que utilizar los mediaquery mas alla de las medidas en porcentajes*/
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+
+
+#container{
+    width: 70%;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    background-color: red;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    background-color: blue;
+    color: #333;
+    
+}
+
+aside{
+    width: 25%; /*Para Maquetar una web en responsibe se teiene que pensar en porcentajes para las cajas mas que en pixeles*/
+    background-color: #ccc;
+    float: left;
+    min-height: 700px;
+    text-align: center;
+    line-height: 700px;
+}
+
+#article {
+    width: 75%;
+    background-color: aquamarine;
+    min-height: 700px;
+    float: left;
+
+}
+
+#article article{
+    width: 25%;
+    height: 150px;
+    background-color: green;
+    color: white;
+    line-height: 150px; /*Para ubicar en el medio del cuadro  mas  no en el centro*/
+    text-align: center;
+    border: 2px solid white;
+    float: left;
+    margin:15px;
+}
+
+/*Responsive  Bajo Medua query*/
+/* Signifia que desde la anchura 0 hasta 888 va a ver unos estilos*/
+/* Dentro de los mediaquery se puden poner masa estilos y se pueden convinar con el and y otros elementos que debemos averiguar*/
+@media(max-width: 888px){
+    /*Se ejecutaran estos estilos*/
+
+    #article article{
+        width: 40%;
+        background-color: red;
+    }
+}
+
+@media(max-width: 632px){
+    
+    #container{
+        overflow: hidden; /* Para que los elementos que sobresalgan se oculten*/
+    }
+
+    aside{
+        float: none;
+        min-height: auto;
+        line-height: 20px;
+        width: 91%;
+        padding: 19px;
+    }
+
+    #article{
+        width: 100%;
+    }
+
+    #article article{
+        width: 90%;
+        background-color: blue;
+    }
+}
+
+@media(max-width: 554px){
+    
+    body{
+        background-color: salmon;
+    }
+}

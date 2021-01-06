@@ -1,0 +1,86 @@
+/* Variables */
+/* Para guardar las variables y declarar las varables tienes que realizarlo con un @  + el nombre de la varaible */
+/* Para compilar less se tiene que entrar al cmd y la carpeta que tengas el archivo less  */
+
+
+@bgcolor: lightblue;
+@fuente: Arial;
+@b: body;
+
+
+@{b}{
+    background-color: @bgcolor;
+}
+
+h1{
+    font-family: @fuente;
+}
+
+/* Mixin y anidadcion */
+
+.informacion{
+    ul{
+        width: 250px;
+        height: 250px;
+        border: 4px solid silver;
+        border-radius: 4px;
+        li{
+            background-color: aqua;
+            display: block;
+            width: auto;
+            height: auto;
+            border: 2px solid salmon;
+            margin:15px;
+            float: left;
+            cursor: pointer;
+            a{
+                color: black;
+                font-size: 18px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* Mixin */
+/*se pude crear un mixin solo poniendo un punto y el nombre del mixin */
+.sombras(){
+    box-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 5px black;
+}
+
+.informacion{
+    .sombras();
+}
+
+
+/* Operadores */
+ h1{
+     font-size: 30px + 7px;
+     
+ }
+
+/* Mixins adicionales */
+/* Son funciones que se van a ejecutar cuando se cumpla una condicion */
+/* Primero se coloca un valor a evaluar seguido del when y la otra condicoin que quieres que se cunmpla con el valor*/
+
+.texto-negro(@value) when (@value = true){
+    color:black;
+
+}
+
+h1{
+    color: blue;
+    .texto-negro(true);
+}
+/* bucles */
+
+.loop(@cont) when (@cont > 0){
+    .loop((@cont - 1));
+    height: (900px / @cont);
+ }
+
+ .informacion{
+     height: 900px;
+     .loop(5);
+ }

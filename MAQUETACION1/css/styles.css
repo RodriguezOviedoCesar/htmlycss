@@ -1,0 +1,410 @@
+/*Fuentes*/
+@font-face{
+    font-family: "nevis";
+    src: url(../css/fonts/nevis.eot);
+    src: url(../css/fonts/nevis.eot?#iefix) format('embedded-opentype'),/* Para cargar otro fuente en caso de que esta no se carge*/
+         url( ../css/fonts/woff) format('woff'),
+         url(../css/fonts/nevis.ttf) format('truetype');
+    font-weight: normal; /* Estas les indica cuales van a ser sus propiedasdes como fuentes*/
+    font-style: normal;
+}
+@font-face{
+    font-family: "fajala";
+    src: url(../css/fonts/FjallaOne-Regular.ttf);
+    src: url(../css/fonts/nevis.eot?#iefix) format('truetype');
+    font-weight: normal; /* Estas les indica cuales van a ser sus propiedasdes como fuentes*/
+    font-style: normal;
+}
+@font-face{
+    font-family: "icons";
+    src:url(../css/fonts/websymbols-regular-webfont.svg#WebSymblosRegular) format('svg'),
+        url(../css/fonts/websymbols-regular-webfont.eot);
+    src:url(../css/fonts/websymbols-regular-webfont.eot?#iefix) format('embedded-opentype'),
+        url( ../css/fonts/websymbols-regular-webfont.woff) format('woff'),
+        url(../css/fonts/websymbols-regular-webfont.ttf) format('truetype');
+
+}
+
+
+/* Estilos Gnerales */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../img/paven.png);
+}
+
+a{
+    color: #529125;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#285616;
+}
+
+a:visited{
+    color: #529125;
+}
+
+.red{
+    color: #9b2422 !important;
+}
+.blue{
+    color: #0c73f2 !important;
+}
+
+.ama{
+    color: #d69d2a;
+}
+
+.icon{
+    font-family: "icons";
+    float: left;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+/*Formularios*/
+
+input[type = text],
+input[type = password],
+input[tyoe = email], 
+select{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    background-color: white;
+    padding: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    transition: all 300ms;
+}
+
+/* para cuando interactuemos con los formularios*/
+input[type = text]:focus,
+input[type = password]:focus,
+input[tyoe = email]:focus, 
+select:focus{
+    border: 1px solid #70b231;
+    color: black;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset],
+button{
+    display: block;
+    border-radius: 2px; 
+    border: 1px solid green;
+    cursor: pointer;
+    color: white;
+    width: 60px;
+    padding: 3px;
+    background-color: #70b231;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+button:hover{
+    box-shadow: 0px 0px 2px gray;
+}
+input[type=button]:active,
+input[type=submit]:active,
+input[type=reset]:active,
+button:active{
+    box-shadow: 0px 0px 3px gray inset;
+    text-shadow: 0px 0px 1px #ccc;
+}
+ 
+/* Cabezera */
+#header{
+    min-width: 1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+
+#header  a{
+    text-decoration: none;
+}
+
+#header #Logotipo{
+    width: 770px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#header #Logotipo img{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 140px;
+}
+
+#header h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "nevis";
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #333333;
+    transition: all 300ms ;
+}
+
+#header h1:hover{
+    text-shadow: 0px 2px 1px #333333, 0px 0px 4px #70b231;
+}
+
+#header h1 a{
+    color: #70b231;
+}
+
+/* Barra de mavegacion*/
+#nav{
+    width: 100%;
+    background-color: #333333;
+    color:white;
+    height: 40px;
+    font-family: sans-serif, Helvetica, Arial;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px grey;
+}
+
+#nav ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 1090px;
+
+}
+
+/* > es para selecionar el primer elemento de lo que pongamos despues*/
+#nav >ul > li{
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid grey;
+    transition: all 300ms;
+}
+
+#nav > ul > li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#nav > ul > li > a:first-child{
+    border-left: 1px solid gray;
+}
+
+#nav > ul > li:hover{
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px green inset;
+}
+
+/* Menu despegable*/
+
+#nav > ul > li > ul{
+    display: none;
+    position: absolute; /* que no sobresalga del menu y que salga cuadno tiene que salir */
+    width: 160px;
+    box-shadow: 0px 2px 2px grey;
+    z-index: 1; /* Para que este por encima de los elementos*/
+}
+
+#nav > ul > li:hover > ul{
+    display: block;
+}
+
+#nav > ul > li:hover > ul > li{
+    background-color: #f2f1f0;
+    border-bottom: 1px solid#d6d6d6;
+    padding: 8px; /* Separacion a los elementos*/
+    line-height: 25px; /* Para centrarlo verticalmente*/
+    font-size: 13px;
+    transition: all 300ms;
+}
+
+#nav > ul > li:hover > ul > li a{
+    color: #666666;
+}
+
+#nav > ul > li:hover > ul > li:hover{
+    box-shadow: 0px 0px 2px #ccc inset;
+}
+
+/* Contenido */
+#Conten{
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0px auto;
+}
+
+/* Barra Lateral */
+
+#aside, #Frase{
+    width: 200px;
+    float: left;
+    margin:30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+#frase{
+   /* clear: both; /* Para limpiar flotado y que ninguna cosa se mueva*/
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+/* Estilos a los widges */
+#aside .widget{
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333;
+}
+
+#aside .widget:last-child{
+    margin-bottom: 20px;
+}
+
+#aside h3{
+    display: block;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    background-color: #f2f3f2;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+
+#aside li{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style:circle; /* Para ponerle estilos a las listas dentro de css*/
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+/*Formularios barra lateral*/
+
+#aside div label,
+#aside div input[type=text],
+#aside div input[type=email],
+#aside div input[type=password],
+#aside div a{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#aside div input[type=button],
+#aside div input[type=submit],
+#aside div button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#aside input,
+#aside label{
+    margin: 0px auto;
+    text-align: center;
+}
+
+/*Secciones*/
+
+#seccion{
+    float: right;
+    width: 75%;
+    font-family: sans-serif,arial,Helvetica;
+    margin-right: 20px;
+}
+
+#seccion .titulo{
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc ;
+    font-family: "fajala";
+    margin-top: -20px;
+}
+
+#seccion section{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px  #c9c9c9;
+    color:#333333;
+    font-size: 16px;
+    overflow: hidden; /* Que todo lo que sobresalga de los cuadros se oculte */
+}
+
+#seccion .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#seccion .date{
+    color: gray;
+    font-size: 14px;
+}
+
+#seccion .Sticker1,
+#seccion .Sticker2{
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0; /* Para que tenga ese nivel*/
+}
+
+#seccion .Sticker2{
+    margin-left: 56%;
+}
+
+
+#history{
+    float: right;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+}
+
+/* Pie de pagina*/
+
+#footer{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}

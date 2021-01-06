@@ -1,0 +1,71 @@
+@font-face{
+    font-family: "Source";
+    src: url(../font/Ro/Rochester-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Source";
+    text-align: center;
+    text-decoration:underline;
+    text-decoration-style: double;
+    font-size: 25px;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.ContenedorGeneral{
+    background-color: bisque;
+    max-width: 1200px;
+    margin: 100px;
+}
+
+
+.Cabezera {
+    background-color: aqua !important;
+    width: 100% !important;
+    float: left !important;
+    display: block !important;
+    color: black !important;
+    line-height: 55px;
+}
+
+.a{
+    display: block;
+    float: left;
+    margin-left: 70px;
+    margin-right: 65px;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+
+.elementose{
+    background-color: azure;
+    display: block;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.contenedorprincipal{
+    background-color: rgb(215, 255, 215);
+    width: 70%;
+    height: 450px;
+}
+.BarraLateral{
+    background-color:cornflowerblue; 
+    color: white;
+    width: 30%;
+    display: block;
+    margin-top: 60px ;
+    margin-bottom: 40px;
+}

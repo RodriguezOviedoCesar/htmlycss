@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <!--La etiqueta viewport es para que se hago escalable a cualquier tipo de ancho de pantalla y el user-scalable es para que el usuario no haga
+    escrroll o on expanda su pantalla y esta se quede como nosotros lo diseñamos y sea compatible con todas las pantallas-->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Maquetacion 2</title>
+    <link rel="shortcut icon" href="../Maquetacion-2/img/supertux.png" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='../Maquetacion-2/css/styles.css'>
+    <link rel="stylesheet" href="../Maquetacion-2/css/responsive.css"">
+</head>
+<body>
+    <!-- Inicio Cabexera-->
+    <header id="header">
+        <!-- Un wrap es como un contenedor se utiliza para el menu es recomendable utilizar los bloques y diviosnes para trabajar y 
+        de esa manera optimizar mejor el trabajo-->
+        <div class="wrap">
+            <div id = "logo">
+                <span id="gear">S</span><!--Se le pone la S por el web Symbols que se utiliza y se consume las apis para darle el diseño 
+                                            y la imagen se encuentra con la letra S-->
+                <h3>BLOG</h3>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">FORMACION</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <!--Fin de cabezera-->
+
+  
+    <section class="wrap">
+        <section id="info">
+            <!-- Inicio Banner-->
+            <div id="banner">
+                <h1>CURSO DE DESARROLO WEB APRENDIENDO HTML Y CSS</h1>
+            </div>
+                <!-- Fin Banner -->
+
+            <!--Inicio tarjetas-->
+            <div id="cards">
+                <div class="card">
+                    <p class="icon">H</p>
+                    <h2 class="category">Desarrollo web</h2>
+                    <p class="description">Aprende los principales lenguaje para desarrollar webs conviertete en web master</p>
+                </div>
+                <div class="card">
+                    <p class="icon">_</p>
+                    <h2 class="category">Sistemas Operativos</h2>
+                    <p class="description">Aprende a adminstrar sistemas linux y windows</p>
+                </div>
+                <div class="card">
+                    <p class="icon">S</p>
+                    <h2 class="category"> Hardware</h2>
+                    <p class="description">Conoce los entre hijos del hardware</p>
+                </div><div class="card">
+                    <p class="icon">u</p>
+                    <h2 class="category">Redes e internet</h2>
+                    <p class="description">Aprende a configurar redes informaticas y servidores</p>
+                </div><div class="card">
+                    <p class="icon">a</p>
+                    <h2 class="category">Bases de datos</h2>
+                    <p class="description">Aprende a montar y administrar bases de datosr</p>
+                </div>
+            </div>
+            <!--Fin e tarjestas-->
+        </section>
+
+        <!-- Inicio de barra lateral-->
+        <div class="clearfix"></div>
+        <aside id="lateral">
+
+            <h3>BUSCAR</h3>
+            <div id="search">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Ingrese su email">
+                    <input type="button" value="L" class="icon">
+                </form>
+            </div>
+            <h3>LOGIN</h3>
+            <div id="login" class="aside-box">
+                <form action="">
+                    <label id="user" class="icon">U</label>
+                    <input type="email" name="" id="" placeholder="Ingrese su email">
+
+                    <label id="password" class="icon">w</label>
+                    <input type="password" name="" id="" placeholder="Ingrese su contraseña">
+
+                    <input type="submit" value="Editar">
+                    <input type="reset" value="Limpiar">
+
+                    <a href="#">Registrate aqui</a>
+                    <a href="#">¿Olvidaste la contraseña?</a>
+                </form>
+            </div>
+            <h3>REDES SOCIALES</h3>
+            <div id="social" class="aside-box">
+                <div class="twiter">
+                    <a href="#" class="icon">t</a>
+                    <!--Para colocar cuadros a las redes sociales luego estos cuaddros van a tener animaciones con css-->
+                    <p class="overlay">
+                        twiter
+                    </p>
+                </div>
+                <div class="youtube">
+                    <a href="#" class="icon">y</a>
+                    <p class="overlay">
+                        YouTube
+                    </p>
+                </div>
+                <div class="facebook">
+                    <a href="#" class="icon">f</a>
+                    <p class="overlay">
+                        Facebook
+                    </p>
+                </div>
+            </div>
+            <h3>PATROCINADORES</h3>
+            <div id="sponsor" class="aside-box"></div>
+        </aside>
+
+        <!--Fin de barra lateral-->
+
+        <!--Inico de Articulos -->
+        <section id="articles">
+            <h2>Ultimos articulos </h2>
+            <div class="clearfix"></div>
+            <article> <!--Es la etiquetas para articulos-->
+                <div class="data">
+                    <span>Fecha : 12 dic</span>
+                    <span>Categorias : Pruebas</span>
+                </div>
+                <h4>
+                    <a href="#"> Titulo del articulo </a>
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt ducimus fugit nobis, adipisci officiis dolore quidem neque voluptates et amet nostrum, nam commodi sapiente suscipit earum cum deserunt deleniti.
+                </p>
+            </article>
+            <article> <!--Es la etiquetas para articulos-->
+                <div class="data">
+                    <span>Fecha : 12 dic</span>
+                    <span>Categorias : Pruebas</span>
+                </div>
+                <h4>
+                    <a href="#"> Titulo del articulo </a>
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt ducimus fugit nobis, adipisci officiis dolore quidem neque voluptates et amet nostrum, nam commodi sapiente suscipit earum cum deserunt deleniti.
+                </p>
+            </article>
+            <article> <!--Es la etiquetas para articulos-->
+                <div class="data">
+                    <span>Fecha : 12 dic</span>
+                    <span>Categorias : Pruebas</span>
+                </div>
+                <h4>
+                    <a href="#"> Titulo del articulo </a>
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt ducimus fugit nobis, adipisci officiis dolore quidem neque voluptates et amet nostrum, nam commodi sapiente suscipit earum cum deserunt deleniti.
+                </p>
+            </article>
+            <article> <!--Es la etiquetas para articulos-->
+                <div class="data">
+                    <span>Fecha : 12 dic</span>
+                    <span>Categorias : Pruebas</span>
+                </div>
+                <h4>
+                    <a href="#"> Titulo del articulo </a>
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt ducimus fugit nobis, adipisci officiis dolore quidem neque voluptates et amet nostrum, nam commodi sapiente suscipit earum cum deserunt deleniti.
+                </p>
+            </article>
+            <article id="blog">
+                <a href="#">Ir al blog</a>
+            </article>
+        </section>
+        <!-- Fin de articulos -->
+
+    </section>
+
+    <!-- Pie de pagina -->
+
+    <div class="clearfix"></div>
+    <footer id="footer">
+        <div class="wrap">
+            <div id="menufooter">
+                <h5>MEN&Uacute</h5>
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">FORMACION</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div id="location">
+                <h5>Donde estamos</h5>
+                <!-- Para meter ubicaciones de google maps-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.2957300563507!2d-80.68949388530484!3d-4.8900683964494265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9035fbb7efc7e7b9%3A0x5fee9524d62e6587!2sPlaza%20de%20Armas%20de%20Sullana!5e0!3m2!1ses!2spe!4v1610399595546!5m2!1ses!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div id="info">
+                <h5>Desarrollado con: </h5>
+                <p>
+                    <img src="../Maquetacion-2/img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png" alt="Creado con html y css">
+                </p>
+                <h5>Optimizado para</h5>
+                <p id="browsers">
+                    <a href="#">
+                        <img src="../Maquetacion-2/img/firefox-icon.png" alt="Firefox" title="firefox">
+                    </a>
+                    <a href="#">
+                        <img src="../Maquetacion-2/img/chrome.png" alt="chrome" title="chrome">
+                    </a>
+                    <a href="#">
+                        <img src="../Maquetacion-2/img/Opera_256x256.png" alt="Opera" title="Opera">
+                    </a>
+                    <a href="#">
+                        <img src="../Maquetacion-2/img/safari.png" alt="safari" title="safari">
+                    </a>
+                    <a href="#">
+                        <img src="../Maquetacion-2/img/android.png" alt="android" title="android">
+                    </a>
+                    <a href="#">
+                        <img src="../Maquetacion-2/img/ios.png" alt="ios" title="ios">
+                    </a>
+                </p>
+
+                <h5>AUTOR</h5>
+                <p>&copy; Rodriguez Oviedo</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin de pie de pagina -->
+
+</body>
+</html>

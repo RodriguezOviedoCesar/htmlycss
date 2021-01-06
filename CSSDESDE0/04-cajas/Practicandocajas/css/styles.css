@@ -1,0 +1,40 @@
+@font-face{
+    font-family: "Josefin";
+    src: url(../font/Josefin/static/JosefinSlab-Bold.ttf);
+}
+*{
+    font-family: "Josefin";
+    padding: 0px;
+    margin: 0px;
+}
+h1,
+h2,
+p{
+    color: coral;
+    text-decoration: underline;
+    text-align: center;
+}
+.div__p{
+    color: black;
+    line-height: 250px;
+    font-weight: bolder;
+}
+.cajas{
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-right: 15px;
+    margin-left: 20px;
+    height: 250px;
+    width: 250px;
+    display: block;
+    float: left;
+    padding-bottom:0px;
+}
+
+.clearfix{
+    float: none;/* cancelamos los float de los div o cuadros anterirores*/
+    clear: both;
+}
+

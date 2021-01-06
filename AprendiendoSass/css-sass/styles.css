@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/*Lo e abajo son varaibles*/
+/*Esto es anidacion*/
+body {
+  background-color: #ccc;
+}
+
+h1 {
+  color: red;
+  font-family: sans-serif, Helvetica, Arial;
+}
+
+p {
+  color: #7a1414;
+}
+
+.caja {
+  width: 250px;
+  height: 250px;
+  background-color: whitesmoke;
+  border: 4px solid black;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px gray, 1px 2px 1px gray, 1px 3px 1px gray, 1px 4px 1px gray;
+  margin: 0 auto;
+}
+.caja h1 {
+  color: blue;
+}
+.caja p {
+  color: green;
+}
+.caja .info {
+  font-size: 10px;
+}
+.caja .info span {
+  color: #7a1414;
+  font-size: 25px;
+}
+.caja .info span p {
+  color: red;
+  font-size: 30px;
+}
+.caja .info span p h1 {
+  color: #7a1414;
+  font-size: 40px;
+}
+
+/*En estilos.scss esta como trabajar co modulos y importalos con la palabra @use*/
+/* Mixins / Funciones */
+/* Se utiliza con la palbra reservada mixin*/
+/* Para incluir los mixin se requiere poner @incluides: nombre del la funcion o mixin*/
+/* Al igual que una funcion se le pueden poner parametros y declararlos despues*/
+h1 {
+  text-decoration: underline;
+  letter-spacing: 5px;
+}
+
+/*Herencia*/
+/* Para realizar una herencia en sass se tiene que poner este simbolo delante del nombre de la herencua Ejemplo
+%alert-normal
+y para llamar a esta herencia se utiliza la palabra @extend*/
+.alerta3, .alerta2, .alerta1, .alerta {
+  border: 1px solid gray;
+  background-color: cadetblue;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.alerta1 {
+  color: red;
+  border: 4px solid red;
+}
+
+.alerta2 {
+  color: yellow;
+  border: 4px solid yellow;
+}
+
+.alerta3 {
+  color: green;
+  border: 4px solid green;
+}
+
+/* Operaciones */
+/* Tambien se pueden coloar variables y dividrilas entre otras variables que contengan algun numero dentro de ellas */
+h1 {
+  font-size: 25px;
+}
+
+/* Condicionales */
+/* if  como todo lenguaje de programacion se puede colocar el if else if y else*/
+h1 {
+  color: pink;
+}
+
+/* For */
+.listado ul {
+  /* La 1 se realiza eso para poder realizar la operacion y el nth:nth-child() es para que agarre cada uno de los elementos 
+  del li atravez del contador que va de 1 en 1 por la almoadilla*/
+}
+.listado ul li:nth-child(1) {
+  color: orange;
+  font-size: 2px;
+}
+
+.listado ul {
+  /* La 2 se realiza eso para poder realizar la operacion y el nth:nth-child() es para que agarre cada uno de los elementos 
+  del li atravez del contador que va de 1 en 1 por la almoadilla*/
+}
+.listado ul li:nth-child(2) {
+  color: orange;
+  font-size: 3px;
+}
+
+.listado ul {
+  /* La 3 se realiza eso para poder realizar la operacion y el nth:nth-child() es para que agarre cada uno de los elementos 
+  del li atravez del contador que va de 1 en 1 por la almoadilla*/
+}
+.listado ul li:nth-child(3) {
+  color: orange;
+  font-size: 4px;
+}
+
+.listado ul {
+  /* La 4 se realiza eso para poder realizar la operacion y el nth:nth-child() es para que agarre cada uno de los elementos 
+  del li atravez del contador que va de 1 en 1 por la almoadilla*/
+}
+.listado ul li:nth-child(4) {
+  color: orange;
+  font-size: 5px;
+}
+
+.listado ul {
+  /* La 5 se realiza eso para poder realizar la operacion y el nth:nth-child() es para que agarre cada uno de los elementos 
+  del li atravez del contador que va de 1 en 1 por la almoadilla*/
+}
+.listado ul li:nth-child(5) {
+  color: orange;
+  font-size: 6px;
+}
+
+.listado ul {
+  /* La 6 se realiza eso para poder realizar la operacion y el nth:nth-child() es para que agarre cada uno de los elementos 
+  del li atravez del contador que va de 1 en 1 por la almoadilla*/
+}
+.listado ul li:nth-child(6) {
+  color: orange;
+  font-size: 7px;
+}
+
+.listado ul {
+  /* La 7 se realiza eso para poder realizar la operacion y el nth:nth-child() es para que agarre cada uno de los elementos 
+  del li atravez del contador que va de 1 en 1 por la almoadilla*/
+}
+.listado ul li:nth-child(7) {
+  color: orange;
+  font-size: 8px;
+}
+
+.listado ul {
+  /* La 8 se realiza eso para poder realizar la operacion y el nth:nth-child() es para que agarre cada uno de los elementos 
+  del li atravez del contador que va de 1 en 1 por la almoadilla*/
+}
+.listado ul li:nth-child(8) {
+  color: orange;
+  font-size: 9px;
+}
+
+/* each */
+/* whiless  */
+/* Los demas aprenderlos por nuestra propia cuenta */
+label {
+  color: yellow;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/*Aprendiendo sass 
+Primero empezaremos por las variables
+Varable es un contenedor de informaicon
+para ejecutarlo y poder compilarlo y que el html lo puede procesar se debe de conpilar y convertirlo en un archivo css esto se hace mediante el
+cmd o consola de las computadoras mediante este comando solo se es¡jecuta este comando en el directorio que tengas tu archivo sass 
+ ****  sass --watch nombrearchivosass nombredelarchivocssquequierescrear o que quieres que contenga el sass al css**** */
+/* Mixxing es una funcion dentro de sass para ver ejemplo revisar en el archivo base*/
+/* Herencia tambien esta en la hoja _base.scss*/
+/* Operadores tambine esta en la base*/
+
+/*# sourceMappingURL=styles.css.map */

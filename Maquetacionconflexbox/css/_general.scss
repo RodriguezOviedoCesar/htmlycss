@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    height: 840px;
+}
+
+#body{
+    margin-top: 40px;
+    margin-left: 75px;
+    box-shadow: 1px 1px 8px rgb(185, 185, 185);
+    height: 790px;
+    width: 90%;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
