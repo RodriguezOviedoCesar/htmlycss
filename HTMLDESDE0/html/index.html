@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type = "text.css" href="style.css">
+  </head>
+  <body>
+    <h1> Titulo de la web</h1>
+    <h2> Bienvenidos </h2>
+    <p> Por favor tengo que aprender</p>
+    <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing <br>elit, sed do eiusmod
+       tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam
+       , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat.<br> Duis auteirure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+       non proident, sunt in culpa qui officia deserunt mollit anim id est
+       laborum.
+     </p>
+     <!-- Hace que esto sea como una cita
+      Es una estiqueta que hace que el parrafo dentro de ella sea como una cita-->
+     <blockquote >
+        ufgghjhjkj
+     </blockquote>
+     <hr>
+        <h3>Tercer encabezado de la pagina</h3>
+     <hr>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco <strong> dsadjaskd </strong> laboris nisi ut <em> lsdkasdn </em> aliquip ex
+      ea commodo consequat. Duis aute irure
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+      anim id est laborum.
+    </p>
+
+    <!--Como crear una lista en html
+    lista ordenada   la lista ordenada se crea con esa estiqueta <ol></ol>
+    La etiqueta significa ordenate list
+    Por ordenadas se refieren a enunmeradas
+    para crear las listas utilizaremos la etiqueta <li></li>-->
+
+
+    <label class = "label"> Lista de frutas </label>
+    <ol>
+      <li>Manzanas</li>
+      <ul>
+        <li>Roja</li>
+        <li>verde</li>
+      </ul>
+      <li>Platanos</li>
+      <ul>
+        <li>maduros</li>
+        <li>Sancochados</li>
+      </ul>
+      <li>Zanhorias</li>
+        <ul>
+          <li> Grandes</li>
+          <li>Chicas</li>
+        </ul>
+      <li>Brocoli</li>
+        <ul>
+          <li>Grande</li>
+          <ul>
+            <label for=""> Sigenos</label>
+            <ul>
+              <li><a href="https://www.instagram.com" target="_blank"> Instagran </a></li>
+              <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            </ul>
+          </ul>
+          <li>Chico</li>
+        </ul>
+      <li>otros</li>
+      <ul>
+        <li>cualquiera</li>
+        <li>cualqueira1</li>
+      </ul>
+    </ol>
+
+
+        <!--Como crear una lista en html
+        lista desordenada   la lista sin orden se crea con esa estiqueta <ul></ul>
+        La etiqueta significa undenater list
+        Por desordenadas se refieren a sin enumerar
+        para crear las listas utilizaremos la etiqueta <li></li>-->
+
+      <ul>
+        <li>uno</li>
+          <ol>
+            <li>uno.uno</li>
+            <li>uno.dos</li>
+          </ol>
+        <li>dos</li>
+          <ol>
+            <li>dos.uno</li>
+            <li>dos.dos</li>
+          </ol>
+        <li>tres</li>
+          <ol>
+            <li>tres.uno</li>
+            <li>tres.dos</li>
+          </ol>
+        <li>cuatro</li>
+          <li>cuatro.uno</li>
+            <ol>
+              <li>cuatro.uno.uno</li>
+              <li>cuatro.uno.dos</li>
+            </ol>
+          <li>cuatro.dos</li>
+            <ol>
+              <l>4.2.1</li>
+              <l>4.2.2</li>
+            </ol>
+      </ul>
+
+      <hr>
+        <h2> Imagenes HTML </h2>
+        <!-- Atributos de  imgUIN
+        alt = "Describe lo que tiene la imagen" por si no carga la imagen carga el texto
+        title = "Coloca el titulo a la imagen"-->
+        <!-- Tambien se le puede poner width ="", heigth = ""
+        pero no se recomienda mucho-->
+          <img src="C:/Users/CESAR/Desktop/cursomastercss/imagenes/OIP.jfif" alt="Imagen random" title="Imagen random">
+          <img src="C:/Users/CESAR/Desktop/cursomastercss/imagenes/OIP (1).jfif" alt="Imagenr cualquiera" title="Imagen random 1">
+          <img src="c:/Users/CESAR/Desktop/cursomastercss/imagenes/OIP (2).jfif" alt="Imagen cualquiera" title="Imagen random 2">
+          <img src="c:/Users/CESAR/Desktop/cursomastercss/imagenes/OIP (3).jfif" alt="Imagenes cualquiera que sean estas" title = "Oe no seas cagon pe mano">
+      <hr>
+      <!-- Antes se utilizba para maquetar y darle forma a la pagina web-->
+        <h2>Tablas en HTML</h2>
+          <!-- Etiqueta principal para utilizar la tabla es <table></table>-->
+          <!-- Para crear una fila en table se utiliza la eqtiqueta <tr></tr>-->
+          <!-- Para una columna es la etiqueta <td></td>-->
+          <!-- Para poner el borde llamamos al elemento tag border-->
+          <!-- Con <th></th> pones en negrita todos los elementos y centrado
+          mayormente sulen ser los elementos principales de cada tabla-->
+          <!-- con colspan="" Esto es para poner cuantos para  expandir la columna tantas veces como se quiera-->
+          <table border="1">
+            <tr>
+              <th colspan="1">Nombre</th>
+              <th colspan="1">Apellidos</th>
+              <th colspan="1">Edad</th>
+              <th>Email</th>
+            </tr>
+            <tr>
+              <td>Cesar</td>
+              <td>Rodriguez</td>
+              <td>20</td>
+              <td>cesardeces@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Pablo</td>
+              <td>Perez</td>
+              <td>85</td>
+              <td>pabloperez@gmail.com</td>
+            </tr>
+
+          </table>
+          <hr>
+          <label for=""> New Table </label>
+          <table border="1" >
+              <tr>
+                <th>frutas</th>
+                <th>colores</th>
+                <th>mas</th>
+              </tr>
+              <tr>
+                <td>Manzana</td>
+                <td>rojo</td>
+                <td>Mas</td>
+              </tr>
+              <tr>
+                <td>Pera</td>
+                <td>verde</td>
+                <td>Masmasmasmasmas</td>
+              </tr>
+          </table>
+
+      <hr>
+      <!-- formularios en HTML se utilzan para enivar texto o informacion o cualquier tipo de cosas al servidor -->
+      <!-- Para uttilizar el formulario en HTML se utiliza la etiqueta form -->
+      <!-- Para poner en formulario lo que queramos se coloca la etiqueta input
+      buena practicta es ponerle el mismo nombre a label e input si es que ambas estan juntas si no solo nombre al input
+      placeholder nos permite poner dentro del input algun comentario dentro de la caja de text para que este luego desaparesca
+      la etiqueta textarea sirve para ponerle un cuadro dialogo determinado-->
+
+      <h2>Formulario</h2>
+      <form>
+        <label for="Name"> Name: </label><br>
+        <input type="text" name = "Name" placeholder = "Escribe tu nombre aquì"><br>
+        <label for=""> Busqueda </label>
+        <input type="search" name = "" value=""><br>
+        <label for="">Descripci&oacuten</label>
+        <textarea></textarea><br>
+        <p>
+          <label for="">Radio button</label>
+          <input type="radio" name="" value="">
+        </p>
+        <p>
+          <input type="s" name="" value="">
+        </p>
+
+      </form>
+
+      <hr>
+        <label for=""> Nuevo formulario </label>
+      <form>
+        <p>
+          <label for="">checkbox</label>
+          <input type="checkbox" name="" value="">
+        </p>
+        <p>
+          <label for="Name">Name</label>
+          <input type="text" name="Name" value="">
+        </p>
+        <p>
+          <label for="">Description</label>
+          <textarea></textarea>
+        </p>
+      </form>
+      <hr>
+
+      <hr>
+      <form>
+          <p>
+            <label for="Enviar"> Name </label>
+            <input type="text" name="Enivar" placeholder="Write your name ...">
+          </p>
+          <p>
+            <label for="">Apellidos</label>
+            <input type="text" placeholder="Write your lastname">
+          </p>
+      </form>
+      <hr>
+        <label for=""> Tercer Formulario </label>
+        <form class="container" action="index.html" method="post">
+            <p class="container__p">
+                <label for="container__p-label"> Name </label>
+                <input type="text" name="container__p-inputtext" placeholder="Escriba su nombre...">
+            </p>
+
+            <p class="container__p">
+              <label for="container__p-label">Apellido</label>
+              <input type="text" name="container__p-inputtext" placeholder="Escriba su apellido">
+            </p>
+
+            <p class="container__p">
+              <label for="container__p-label"> Genero </label><br>
+              <input type="radio" name="container__input__radio-Genero" value="Mujer">Mujer<br>
+              <input type="radio" name="container__input__radio-Genero" value="Hombre">Hombre<br>
+              <input type="radio" name="container__input__radio-Genero" value="Sin especificar"> Sin especificar<br>
+            </p>
+
+            <p class="container__p">
+                <label for="container__p-label"> Moneda</label><br>
+                <input type="radio" name="container__input__radio-Moneda" value="chilena">Peso chileno<br>
+                <input type="radio" name="container__input__radio-Moneda" value="Colombiano">Peso Colombiano<br>
+                <input type="radio" name="container__input__radio-Moneda" value="Peruanao">Soles Peruanos<br>
+            </p>
+
+            <p class = "container__p">
+              <label for="container__p-label"> Nacionalidad </label><br>
+              <input type="radio" name="container__input__checkbox-Nacionalidad" value="Chilena">chilena <br>
+              <input type="radio" name="container__input__checkbox-Nacionalidad" value="Colombiano">Colombiano <br>
+              <input type="radio" name="container__input__checkbox-Nacionalidad" value="Peruano">Peruano <br>
+            </p>
+
+            <!-- Con el campo select sirve para hacer seleccion de un solo elemento en una lista despegable
+            y va acompañada de la etiqueta option que es donde le iremos a colocar los elementos de la lista
+            con value para ver que elementos se estan evaluando -->
+            <select class="" name="">
+                <option value=""> Hombre </option>
+                <option value=""> Mujer </option>
+                <option value=""> Sin especificar</option>
+            </select>
+
+            <select class="" name="">
+                <option value=""> Peru </option>
+                <option value=""> Chile </option>
+                <option value=""> Colombia </option>
+                <option value="" style="" > Desabilitado </option>
+            </select>
+
+            <select class="" name="">
+              <option value=""> Name </option>
+              <option value=""> Rodriguez </option>
+              <option value=""> pjdsakjdsa </option>
+            </select>
+            <select class="" name="">
+              <option value=""> Name </option>
+              <option value=""> encabezado </option>
+              <option value=""> Celulares </option>
+              <option value=""> Computadoras</option>
+              <option value=""> Tables </option>
+              <option value=""> Auriculares </option>
+            </select><br>
+
+            <label for=""> <strong> Elija cualquier frutas </strong> </label>
+              <ol>
+                <li>manzana
+                  <select class="" name="">
+                    <option value=""> Roja </option>
+                    <option value=""> Verde </option>
+                    <option value=""> Israel</option>
+                  </select></li>
+                <li> Limon
+                <select class="" name="">
+                  <option value=""> amarillo </option>
+                  <option value=""> verde </option>
+                </select> </li>
+                <li> Platano
+                <select class="" name="">
+                  <option value=""> Maduro </option>
+                  <option value=""> Sancochado </option>
+                  <option value=""> Verde </option>
+                </select> </li>
+              </ol>
+        </form>
+      <hr>
+        <label class="red"> Eviar un Formulario de type submit </label>
+
+        <form class="" action="index.html" method="post">
+          <label for="">Escriba su nombre </label>
+          <input type="text" name="" value="" placeholder="Nombre..."><br>
+          <label for=""> Escriba sus apellidos</label>
+          <input type="text" name="" value="" placeholder="Apellidos..."><br>
+          <label for="">Selecione su genero</label>
+            <select class="" name="Genero">
+              <option value="Mujer">Mujer</option>
+              <option value="Hombre">Hombre</option>
+              <option value="Sin especificar">Sin especificar</option>
+            </select><br> 
+          <input type="submit" name="enviar" value="Enviar">
+        </form>
+      <hr>
+  </body>
+</html>
+
+<style media="screen">
+.label{
+  color:red;
+}
+.red{
+  color:blue;
+}
+</style>

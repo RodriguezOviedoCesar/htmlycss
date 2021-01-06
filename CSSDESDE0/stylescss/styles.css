@@ -1,0 +1,9 @@
+body{
+    background: gray;
+}
+
+h1{
+    color: #ff8080;
+    font-size: 40px;
+    text-decoration: underline;
+}
