@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+#general {
+  width: 90%;
+  height: 786px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 75px;
+  box-shadow: 0px 0px 10px #b9b9b9;
+  display: grid;
+  grid-template-rows: 1.2fr 5fr 1.4fr;
+}
+
+#header {
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+#header #logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-self: center;
+  align-self: center;
+}
+#header #logo label {
+  font-size: 35px;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  /*con los fonts podemos modificar todo lo relacionado a textos*/
+  font-weight: 900;
+  text-shadow: 0px 0px 4px gray;
+}
+#header #menu {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  margin-right: 25px;
+  align-self: center;
+}
+#header #menu nav {
+  width: 100%;
+}
+#header #menu nav ul {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#header #menu nav ul li {
+  flex-basis: 20%;
+  height: 28px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#header #menu nav ul li a {
+  color: #666666;
+}
+#header #menu nav ul li:hover {
+  background-color: #ccc;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#header #menu nav ul li:hover a {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
