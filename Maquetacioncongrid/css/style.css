@@ -78,6 +78,7 @@
   grid-row-end: 3;
   display: grid;
   grid-template-columns: 0.9fr 4fr;
+  margin-bottom: 30px;
 }
 #contenidocentral #barralateral {
   grid-column: 1, 2;
@@ -130,6 +131,32 @@
 #contenidocentral .contenedorcajas .cajas .cajainfo p {
   color: #ccc;
   font-size: 18px;
+}
+
+footer {
+  border-top: 1px solid #ebebeb;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer #contenedorfooter {
+  align-self: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+footer #contenedorfooter div h2 {
+  display: block;
+  order: 2;
+  text-align: end;
+  margin-right: 15px;
+  font-style: italic;
+  font-size: 35px;
+  text-shadow: 0px 0px 2px gray;
+}
+footer #contenedorfooter div p {
+  order: 1;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
