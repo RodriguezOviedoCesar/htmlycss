@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
 }
 
 #general {
@@ -70,6 +71,65 @@
 }
 #header #menu nav ul li:hover a {
   color: black;
+}
+
+#contenidocentral {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: 0.9fr 4fr;
+}
+#contenidocentral #barralateral {
+  grid-column: 1, 2;
+}
+#contenidocentral #barralateral #titlec {
+  margin: 25px;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  color: #e6e6e6;
+  cursor: pointer;
+  transition: all 300ms;
+}
+#contenidocentral #barralateral ul li {
+  display: block;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+#contenidocentral #barralateral #titlec:hover {
+  background-color: #a0a0a0;
+  color: black;
+}
+#contenidocentral #barralateral ul li:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid #868484;
+}
+#contenidocentral .contenedorcajas {
+  grid-column: 2, 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#contenidocentral .contenedorcajas .cajas {
+  margin: 10px;
+  border: 2px solid #ccc;
+  margin-top: 20px;
+}
+#contenidocentral .contenedorcajas .cajas .cajainfo {
+  margin: 5px;
+}
+#contenidocentral .contenedorcajas .cajas .cajainfo a {
+  color: black;
+  font-size: 18px;
+}
+#contenidocentral .contenedorcajas .cajas .cajainfo p {
+  color: #ccc;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
