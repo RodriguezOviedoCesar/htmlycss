@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -7,14 +8,15 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
     <div class="container-fluid border">
         <div class="row">
             <header class="col bg-secondary text-white text-center">
                 <h1>Aprendiendo bootstrap</h1>
             </header>
-            <nav id="menu" class = "col-12 bg-danger text-white ">
+            <nav id="menu" class="col-12 bg-danger text-white ">
                 <ul id="menul" class="row col-6">
                     <li class="col">Inico</li>
                     <li class="col">1</li>
@@ -24,42 +26,73 @@
                 </ul>
             </nav>
             <div id="contenido" class="col-9 bg-dark">
+                <h3 id="h3" class="text-center text-white">Productos</h3>
                 <div class="prodcuto">
                     <div id="items" class="row justify-content-between text-white">
-                        <div id = "item"class="col bg-primary">
+                        <div id="item" class="col bg-primary">
                             sadjasldk
                         </div>
-                        <div id = "item"class="col bg-primary">
+                        <div id="item" class="col bg-primary">
                             sadjasldk
                         </div>
-                        <div id = "item"class="col bg-primary">
+                        <div id="item" class="col bg-primary">
                             sadjasldk
                         </div>
                     </div>
                     <div id="items" class="row justify-content-between text-white">
-                        <div id = "item"class="col bg-secondary">
+                        <div id="item" class="col bg-secondary">
                             sadjasldk
                         </div>
-                        <div id = "item"class="col bg-success">
+                        <div id="item" class="col bg-success">
                             sadjasldk
                         </div>
-                        <div id = "item"class="col bg-danger">
+                        <div id="item" class="col bg-danger">
                             sadjasldk
                         </div>
-                        <div id = "item"class="col bg-warning">
+                        <div id="item" class="col bg-warning">
                             sadjasldk
+                        </div>
+                    </div>
+                    <!--offset nos va a permitir poner columnas de espaciado entre las diferentes columnas y estas columnas de espaciado siempre
+                    se colocan a la izquierda y simpre que se quiera meter un espacio de columa entre elementos simpre se tiene que colcar al 
+                    ultimo elemento en cuestion Ejemplo en la tercera caja pero para menos palabreria trabaja como un margin solo da margenes entre
+                    los cuadros y si lo desabilitas no funciona-->
+                    <div id="items" class="col-12 text-white">
+                        <div class="row">
+                            <div id="item" class="c1 col-4 bg-primary">
+                                sadjasldk
+                            </div>
+                            <div id="item" class="c1 col-4 bg-primary ">
+                                sadjasldk
+                            </div>
+                            <div id="item" class="c1 col-4 bg-primary ">
+                                sadjasldk
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="barra lateral" class="col-3">
                 <h2>Barra lateral</h2>
+                <div class="lateral row bg-light align-items-center">
+                    <!--Tambien podemos cambiar de posicion los elemetnos con align-self-center-staro end al igual que arriba-->
+                    <!--Tambien se peuden ordenar estos elementos con order-numerodeordenque quieres asignarle Ehemplo-->
+                    <div class="col-12 bg-danger order-3">
+                        Elemento1
+                    </div>
+                    <div class="col-12 bg-warning order-1">
+                        Elemento2
+                    </div>
+                    <div class="col-12 bg-primary order-2">
+                        Elemento3
+                    </div>
+                </div>
             </div>
 
             <footer id="footer" class="col-12 bg-info p-3 text-center">
                 <h3>Practicando bootstrap</h3>
             </footer>
-            
+
         </div>
     </div>
 
@@ -72,4 +105,5 @@
     <script type="javascript" src="jquery/jquery-3.5.1.min.js"></script>
     <script type="javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>

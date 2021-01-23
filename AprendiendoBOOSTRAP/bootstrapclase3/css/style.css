@@ -13,4 +13,23 @@
 #item{
     height: 200px;
     margin: 35px;
+
+}
+.c1{
+    width: 27%;
+}
+
+
+
+#h3{
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+
+.lateral{
+    height:650px;
+}
+
+.lateral > div{
+    height: 60px;
 }
