@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Aprendiendo bootstrap</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <herader class="col-md-12 mt-2">
+                <!--La clase de abajo en donde dice navbar-ligth se le puede cambiar de color a los colores predefinidos que tiene bootstrap 
+                al igual que el bg-ligth se le pueden cambiar los colores y ajustarlos a los colores que uno desee y ponerle los colores que vienen
+                predefinidos en en el framework que en este caso en bootstrap-->
+                <!--Ejemplo de esto seria poner un color primario como bg-darck apara que los colores de los textos se adapten en la barra de
+                <navegacion tenemos que cambiar el color del navbar a dark para que estos se adapten-->
+                <!--Para realizar una navbar con bootstrap tenemos que poner la clase navbar luego modificar como queremos que se visualize en el 
+                responsive con el navbar-expand-lg o leer documentacion de que otros tipos de etiquetas estan predifinadas en la documentacion de 
+                bootstrap luego sigue los colores que es navbar-ligth y el color de fongo que seria bg-ligth-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <!--El container-flui es para que ocupe todo el espacio sea un ancho maximo de casi toda la pantalla-->
+                    <div class="container-fluid">
+                        <!--La navbar-brand es como el titulo del logo del sito web tambiem se le podria introdcuir una imagen y que esta funcione
+                        como un link hacia la misma pagina web-->
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <!--Luego esta el navbar-toggler eso seria como realizar un menu responsive que a partir de ciertos pixeles este se cambie
+                        una imagen de un menu de tres rayas y de esta salgan los demas componentes que tendria la barra de navegaicon es una
+                        etiqueta que viene predefinida en bootstrap-->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!--La clase div que contiene los elemetos del la barra-->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!--Aqui se realiza la barra de navegacion-->
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <!--Con el nav item pones los elemetos que quieres que pertenesca a la barra de navegacion-->
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <!--Con el dropdown haces que este elemetno de la nav contengan mas elemetos despegables-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <!--El dropdown divider haces que con este se divida los elemetos que estan debajo de los de arriba-->
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1"
+                                        aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </herader>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+
+                <!--Para realizar una miga de pan o un elemento que te señale de que pagina estas y desde donde vienes-->
+                <nav>
+                    <!--Para poder realizar esto de debe utilizar el breadcrumb-->
+                    <ol class="breadcrumb">
+                        <!--El breadcrumb-item es para poder poner elementos dentro del breadcrumb-->
+                        <li class="breadcrumb-item">
+                            <a href="#">Inico</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Inico</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Inico</a>
+                        </li>
+                    </ol>
+                </nav>
+                <!--Tambien hay modals que son como ventanas emergenetes-->
+                <!--Tambien hay paginacion para ver en que pagina estamos-->
+                <!--collapse es para mostrar poner informacion oculta dentro de un boton y que cuadno este se precione muestre la informacion 
+                oculta-->
+
+                <!--Barra de progreso-->
+
+                <div>
+                    <h1>Barra Progreso con javascript</h1>
+                    <img src="imagen/Image 29.png" alt="Imagen" height="600px" style="margin-bottom: 25px;">
+                </div>
+
+                <!--Fin de barra de progreso-->
+
+                <!--Eslaider o carrusel-->
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="https://via.placeholder.com/300x200" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="https://via.placeholder.com/300x200" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+
+                <!--Fin de slaider o carrusel-->
+
+                <!--Esto es para poner una alerta con bootstrap-->
+                <!--Con alert-dismissible  nos va a permitir cerrar la alerata le podemos poner el button-->
+                <div class="alert alert-warning alert-dismissible fade show mt-5" role="alert">
+                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    <!--Esto es para colocar el boton de cerrado dentro de la alerta-->
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="alert alert-success alert-dismissible fade show mt-5" role="alert">
+                    <strong>Hecho</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <h2>
+                    <!--El badge es como para poner una notificaicon  y el bg-+colores predeterminados es para poder poner el color a esa 
+                        notificacion-->
+                    <span class="badge bg-danger">nuevo</span>
+                    componentes de bootstrap
+
+                </h2>
+            </div>
+        </div>
+
+        <div class="row col-md-8">
+            <!--Para utilizar la clase tarjeta se tiene que utilizar la etiqueta card  -->
+            <div class="card col-2 p-0 mr-3">
+                <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200">
+                <!--Con card-body le ponemos realmente el cuerpo que va a contener la caja-->
+                <div class="card-body">
+                    <!--Le ponemos al titulo de la tarjeta los elementos que viene definidos para la clase card-->
+                    <h3 class="card-title">Tarjeta 1</h3>
+                    <!--La card-text es para que al parrafo lo reconosca como un elemeto de la card o como el texto de la clase-->
+                    <p class="card-text">
+                        Hola
+                    </p>
+                    <!--Tambien se puede colocar un botton dentrp de una referencia solo con la clase btn Ejemplo:
+                    <a href="#" class = "btn btn-info (el info es el color que se le puede colocar de los colores que ya estan predefinidas)" >
+                        Entrar</a>-->
+                </div>
+                <div class="card col">
+                    <img class="card-img-top" src="https://via.placeholder.com/300x200">
+                    <!--Con card-body le ponemos realmente el cuerpo que va a contener la caja-->
+                    <div class="card-body">
+                        <!--Le ponemos al titulo de la tarjeta los elementos que viene definidos para la clase card-->
+                        <h3 class="card-title">Tarjeta 1</h3>
+                        <!--La card-text es para que al parrafo lo reconosca como un elemeto de la card o como el texto de la clase-->
+                        <p class="card-text">
+                            Hola
+                        </p>
+                    </div>
+                    <div class="card col">
+                        <img class="card-img-top" src="https://via.placeholder.com/300x200">
+                        <!--Con card-body le ponemos realmente el cuerpo que va a contener la caja-->
+                        <div class="card-body">
+                            <!--Le ponemos al titulo de la tarjeta los elementos que viene definidos para la clase card-->
+                            <h3 class="card-title">Tarjeta 1</h3>
+                            <!--La card-text es para que al parrafo lo reconosca como un elemeto de la card o como el texto de la clase-->
+                            <p class="card-text">
+                                Hola
+                            </p>
+                        </div>
+                        <div class="card col">
+                            <img class="card-img-top" src="https://via.placeholder.com/300x200">
+                            <!--Con card-body le ponemos realmente el cuerpo que va a contener la caja-->
+                            <div class="card-body">
+                                <!--Le ponemos al titulo de la tarjeta los elementos que viene definidos para la clase card-->
+                                <h3 class="card-title">Tarjeta 1</h3>
+                                <!--La card-text es para que al parrafo lo reconosca como un elemeto de la card o como el texto de la clase-->
+                                <p class="card-text">
+                                    Hola
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Un tultic es como un pequeño vocadillo que aparece en la pagina web-->
+                </div>
+
+                <script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
+                <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--Herramientas de bootstrap-->
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Clase 4 de Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <div class="container" style="height:500px;">
+        <h1>Herramientas disponibles en bootstrap</h1>
+            <hr>
+        <!--Altura es w
+        y la anchura es h-->
+        <!--Border es para darle un borde a las cajas por defecto es de 1px solid gris clarito
+        para ponerle color solo es borer-nombredecolor
+        rounded reemplaza a border-radius de css 
+        rounded-top pone los bordes arriba
+        rounded-bottom pone en la parte inferior
+        rounded-rigth: a la derecha
+        rounded-left: a la izquierda
+        con rounded-circle es para realizar un circulo-->
+
+        <!--Tambien se pude utilizar el float-pero en este caso ya no va a ser left ni rigth si no float start y end que reemplazaria a esos dos
+        respectivamente
+        el bg es para darle color a las cajas esto es asi bg-+nombre de color o color
+        text- es para darle color a los textos es text-+nombre de color que viene predefinido a parte el text tambien sirve para otras cosas 
+        Ejemplo -- text-center alinea el texto al centro
+        los m es para darle margen o reemplaza al margin y se utiliza de la siguiente manera 
+        m-+cantidad que queries poner la cantidad maxima es de 5 ya que 1 seria 4px y 5 seria 20px
+        tambien es como css se pude poner margin top, margin booton, margin-rigth, margin-left
+        mt-margin top
+        mb-margin bootom
+        mr-margin rigth
+        ml-margin left
+        my-margen por arriba y aboajp
+        mx-darle margenes por los costados
+        los paddin tambien se colocan de la sgt manera p
+        p-+cantidad que quieres de padding
+        tambien se le puede poner margenes positivos y negativos
+        para centrar los elemetos justo en el medio se con los margenes se le tiene que poner el 
+        mx-auto esto seria centra en el eje x averiguar ya que no me salio en este ejercicio
+        la clase shadow se le puede poner aqui y es asi shadow-+sm lg o simplemte la palabra
+        Tambien existe la opcion de que esto se realize o se torne visible o invisible-->
+        <div class="text-white text-center bg-danger float-start caja w-25 h-25 border border-danger rounded m-1">
+            Esto es una caja
+        </div>
+        <div class="text-white text-center bg-primary float-start caja w-25 h-25 border border-warning rounded m-1">
+            Esto es una caja
+        </div>
+        <div class="text-white text-center bg-secondary float-start caja w-25 h-25 border border-dark rounded m-1">
+            Esto es una caja
+        </div>
+        <div class="clearfix"></div>
+        <div class="v1 text-white text-center bg-secondary float-start caja w-25 h-25 border border-dark rounded mx-auto">
+            Esto es una caja
+        </div>
+        <!--Para limpiar los flotados solo se nesecita colocar el clearfix -->
+        <div class="clearfix"></div>
+        <hr>
+        <h2>dasdasdadsas</h2>
+        <hr>
+        <!--Se le puede poner diferentes tamoños a los textos con la palabra display funcionan casi asi como los h1 y h6
+        En este caso solo se puede colocar hasta el display-7
+        tambien se le puede colocar un font-weigth-bold se le puede colocar el bold que se tiene para realizar un texto ancho y un ligth que
+        seria un texto fino
+        tambien se le puede poner el font-italic para que el texto se realiza en cursica
+        small realiza el texto se realize mas pequeño
+        tambien se puede poner el text-upercasse para poner todo el texto en mayuscula o lowercase que seria todo en minuscula
+        todo esto se puede ver en utilites bootstrap 5  en la documentacion offical ya que este curso es del 4 y esta un poco retrasado con
+        el de ahorita-->
+        <h2 class="display-7">Esto es un texto</h2>
+        
+        <!--La etiqueta code rezalta el codigo o lo que esta dentro de ella o url lo resalta 
+        tambien puede resalta todo lo que tenga dentro-->
+        <code>
+            <!--Con la etiqueta pre muestra todo tal cual como se encuentre dentro-->
+            <pre>
+                if($hola==mundo){
+                    echo "Hola munso"
+                }else{
+                    echo "Fin de la instruccion"
+                }
+            </pre>
+        </code>
+
+        <!--Para indicar atajos o convinaciones de teclas se utiliza kbd-->
+        <kbd>
+            ctrl + d
+        </kbd>    para volver al escritorio
+    </div>
+
+
+
+
+
+
+    <!--Script-->
+    <script type="javascript" src="jquery/jquery-3.5.1.min.js"></script>
+    <script type = "javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
