@@ -1,0 +1,16 @@
+#menu{
+    height: 80px;
+}
+
+#menu ul{
+    text-decoration: none;
+    line-height: 80px;
+    list-style: none;
+    font-style: italic;
+    font-size: 18px
+}
+
+#item{
+    height: 200px;
+    margin: 35px;
+}
